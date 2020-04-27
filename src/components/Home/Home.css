@@ -1,0 +1,38 @@
+.Home {
+    background-color: #569194;
+    width: 100%;
+    height: 550px;
+    margin-top: 56px;
+}
+
+.NameDiv {
+    display: block;
+    margin: auto;
+    padding-top: 130px;
+}
+
+.NameDiv h1 {
+    font-family: 'Lobster', cursive;  
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.NameDiv p {
+    font-family: 'Open Sans', sans-serif;  
+    text-align: center;
+}
+
+@media( max-height: 800px) {
+    .Home{
+        height: 300px;
+    }
+    .NameDiv {
+        padding-top: 115px;
+    }
+    .NameDiv h1 {
+        font-size: 2rem;
+    }
+}
