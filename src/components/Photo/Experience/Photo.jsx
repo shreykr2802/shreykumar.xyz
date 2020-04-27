@@ -1,11 +1,11 @@
 import React from 'react';
 
-import shreyPhoto from '../../assets/images/shreykumar.jpg';
+import tavant from '../../../assets/images/tavant-logo.png';
 import classes from './Photo.css'
 
 const photo = props => (
     <div className={classes.Photo}>
-        <img src={shreyPhoto} alt='Shrey Kumar'/>
+        <img src={tavant} alt='tavant'/>
     </div>
 );
 

@@ -1,11 +1,10 @@
 .Photo {
     padding-top: 5%;
     height: 80%;
-    float: left;
+    float: right;
     width: 30%;
 }
 
 .Photo img {
-    width: 80%;
-    border-radius: 50%;
+    width: 50%;
 }

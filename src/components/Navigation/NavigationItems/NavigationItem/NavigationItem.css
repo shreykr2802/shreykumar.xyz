@@ -42,7 +42,7 @@
 
   .NavigationItem a:hover::after {
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
     transform: translateY(-50%,0);
   }
 }

@@ -5,14 +5,14 @@ import classes from './Home.css';
 import SocialNetworks from '../SocialNetworks/SocialNetworks';
 
 const home = props => (
-    <div className={classes.Home}>
+    <section id="home" className={classes.Home}>
         <div className={classes.NameDiv}>
             <p>Thank you for stopping by</p>
             <h1>Hi, I am Shrey</h1>
             <p>An Enthusiatic Web Developer | Quick Learner | Keen Observer of things</p>
         </div>
         <SocialNetworks />
-    </div>
+    </section>
 );
 
 export default home;
