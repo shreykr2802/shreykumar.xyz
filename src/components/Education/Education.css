@@ -1,10 +1,10 @@
-.Experience {
+.Education {
     background-color: #EEEEEE;
     width: 100%;
     height: 550px;
 }
 
-.Experience h1 {
+.Education h1 {
     font-family: 'Courgette', cursive;  
     text-align: center;
     font-weight: bold;
@@ -13,14 +13,15 @@
     margin: 0px;
 }
 
-.CompanyDetails {
-    padding-left: 6%;
+.EducationDetails {
+    padding-left: 5%;
     float: left;
-    width: 65%;
+    width: 90%;
     text-align: justify;
 }
 
-.CompanyDetails ul{
+.Contents {
+    box-sizing: border-box;
     border-left: 2px solid black;
     padding-left: 5%;
 }

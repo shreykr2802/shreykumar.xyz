@@ -1,0 +1,10 @@
+.Photo {
+    height: 80%;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.Photo img {
+    width: 50%;
+    border-radius: 50%;
+}

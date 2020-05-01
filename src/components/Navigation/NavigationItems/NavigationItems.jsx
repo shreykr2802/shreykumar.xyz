@@ -8,10 +8,10 @@ const navigationItems = props => (
        <NavigationItem link="#home">Home</NavigationItem>
        <NavigationItem link="#aboutme">About Me</NavigationItem>
        <NavigationItem link="#experience">Experience</NavigationItem>
-       <NavigationItem link="/">Education</NavigationItem>
-       <NavigationItem link="/">Testimonials</NavigationItem>
-       <NavigationItem link="/">Projects</NavigationItem>
-       <NavigationItem link="/">Contact Me</NavigationItem>
+       <NavigationItem link="#education">Education</NavigationItem>
+       <NavigationItem link="#testimonials">Testimonials</NavigationItem>
+       <NavigationItem link="#projects">Projects</NavigationItem>
+       <NavigationItem link="#contactme">Contact Me</NavigationItem>
     </ul>
 );
 
