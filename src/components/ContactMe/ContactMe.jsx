@@ -6,7 +6,6 @@ const contactMe = props => (
     <section id="contactme" className={classes.ContactMe}>
         <h1>Contact Me</h1>
         <div >
-           
         </div>
     </section>
 );

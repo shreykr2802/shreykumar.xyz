@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import classes from './Testimonials.css';
-import TestimonialPhoto from '../Photo/Testimonials/Photo';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import TestimonialContents from './TestimonialContents/TestimonialContents';
 
 const testimonials = props => {
 
@@ -17,22 +17,19 @@ const testimonials = props => {
     const [index, setIndex] = useState(0);
 
     const testimony = [
-        <div id="testimonial1">
-            <TestimonialPhoto />
-            <p>Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed</p>
-            <p>1 Wroking as ABC in XYZ</p>
-        </div>,
-        <div id="testimonial2">
-            <TestimonialPhoto />
-            <p>Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed</p>
-            <p>2 Wroking as ABC in XYZ</p>
-        </div>,
-        <div id="testimonial3">
-            <TestimonialPhoto />
-            <p>Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed</p>
-            <p>3 Wroking as ABC in XYZ</p>
-        </div>
-    ];
+        {
+            description: 'Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed',
+            designation: '1 Wroking as ABC in XYZ'
+        },
+        {
+            description: 'Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed',
+            designation: '2 Wroking as ABC in XYZ'
+        },
+        {
+            description: 'Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed',
+            designation: '3 Wroking as ABC in XYZ'
+        },
+    ]
 
     const goLeft = () => {
         const offset = x === 0 ? -100 * (testimony.length - 1) : x + 100;
@@ -79,7 +76,7 @@ const testimonials = props => {
                 {testimony.map((t, index) => {
                     return (
                         <div key={index} className={classes.SlideTestimonial} style={{ transform: `translateX(${x}%)` }}>
-                            {t}
+                            <TestimonialContents {...t} photoId={index}/>
                         </div>
                     );
                 })}
