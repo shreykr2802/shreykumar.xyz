@@ -8,7 +8,7 @@ const toolbar = props => (
     <header className={classes.Toolbar}>
         <DrawerToggle toggle={props.toggle}/>
         <nav className={classes.DesktopOnly}>
-            <NavigationItems />
+            <NavigationItems clicked={props.clicked}/>
         </nav>
     </header>
 );

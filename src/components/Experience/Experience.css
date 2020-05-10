@@ -1,26 +1,83 @@
 .Experience {
-    background-color: #EEEEEE;
-    width: 100%;
-    height: 550px;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 650px;
 }
 
 .Experience h1 {
-    font-family: 'Courgette', cursive;  
-    text-align: center;
-    font-weight: bold;
-    font-size: 3rem;
-    padding: 20px;
-    margin: 0px;
+  font-family: "Courgette", cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 20px;
+  margin: 0px;
 }
 
 .CompanyDetails {
-    padding-left: 6%;
-    float: left;
-    width: 65%;
-    text-align: justify;
+  padding-left: 6%;
+  float: left;
+  width: 65%;
+  text-align: justify;
 }
 
-.CompanyDetails ul{
-    border-left: 2px solid black;
-    padding-left: 5%;
+.CompanyDetails li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  left: 5%;
+}
+
+.CompanyDetails ul {
+  padding-left: 5%;
+  list-style: none;
+  border-left: 2px solid black;
+}
+
+.Duration {
+  color: gray;
+  float: right;
+  font-size: 1rem;
+}
+
+.Heading {
+  font-weight: bold;
+  font-size: 1.17rem;
+}
+
+@media (max-width: 600px) {
+  .Experience h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .Heading {
+    font-size: 1rem;
+  }
+
+  .Duration {
+    font-size: 0.7rem;
+  }
+
+  .CompanyDetails ul {
+    padding-left: 3%;
+  }
+
+  .CompanyDetails li::before {
+    left: 4%;
+    width: 15px;
+    height: 15px;
+  }
+
+  .Experience {
+    height: 700px;
+    padding-bottom: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+    .Experience {
+        height: 110vh;
+    }
 }

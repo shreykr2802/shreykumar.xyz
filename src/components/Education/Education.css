@@ -1,27 +1,79 @@
 .Education {
-    background-color: #EEEEEE;
-    width: 100%;
-    height: 550px;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 500px;
 }
 
 .Education h1 {
-    font-family: 'Courgette', cursive;  
-    text-align: center;
-    font-weight: bold;
-    font-size: 3rem;
-    padding: 20px;
-    margin: 0px;
+  font-family: "Courgette", cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 20px;
+  margin: 0px;
 }
 
 .EducationDetails {
-    padding-left: 5%;
-    float: left;
-    width: 90%;
-    text-align: justify;
+  padding-left: 6%;
+  float: left;
+  width: 65%;
+  text-align: justify;
 }
 
-.Contents {
-    box-sizing: border-box;
-    border-left: 2px solid black;
-    padding-left: 5%;
+.EducationDetails li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  left: 5%;
 }
+
+.EducationDetails ul {
+  padding-left: 5%;
+  list-style: none;
+  border-left: 2px solid black;
+}
+
+.Duration {
+  color: gray;
+  float: right;
+  font-size: 1rem;
+}
+
+.Heading {
+  font-weight: bold;
+  font-size: 1.17rem;
+}
+
+@media (max-width: 600px) {
+  .Education h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .Heading {
+    font-size: 1rem;
+  }
+
+  .Duration {
+    font-size: 0.7rem;
+  }
+
+  .EducationDetails ul {
+    padding-left: 3%;
+  }
+
+  .EducationDetails li::before {
+    left: 4%;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* @media (max-width: 500px) {
+  .Education {
+    height: 5;
+    padding-bottom: 5%;
+  }
+} */

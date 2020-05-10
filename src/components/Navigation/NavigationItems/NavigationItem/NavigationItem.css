@@ -38,18 +38,18 @@
     width: 0;
     height: 2px;
     background-color: black;
+    transform: translateX(100%);
   }
 
   .NavigationItem a:hover::after {
     width: 100%;
     transition: all 0.7s ease;
-    transform: translateY(-50%,0);
+    transform: translateX(0);
   }
 }
 
 @media (max-width: 750px) {
-  .NavigationItem a{
+  .NavigationItem a {
     font-size: 0.8rem;
   }
 }
-

@@ -11,9 +11,9 @@ const photo = props => {
         image = <img src={tavant} alt='tavant' />;
 
     return (
-        <div className={classes.Photo}>
+        <a className={classes.Photo}>
             {image}
-        </div>
+        </a>
     )
 }
 

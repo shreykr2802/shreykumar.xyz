@@ -15,7 +15,7 @@ const topDrawer = props => {
       <Backdrop show={props.open} clicked={props.closed} />
       <div className={attachedClasses.join(" ")} onClick={props.closed}>
         <nav>
-          <NavigationItems />
+          <NavigationItems clicked={props.clicked}/>
         </nav>
       </div>
     </div>

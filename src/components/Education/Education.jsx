@@ -7,17 +7,17 @@ const education = props => (
         <h1>Education</h1>
         <div className={classes.EducationDetails}>
             <ul>
-                <li>
-                    <h3>XII from Kendriya Vidayalaya Moradabad - </h3>
-                    <p className={classes.Contents}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa dui, convallis sit amet lacus eu, iaculis volutpat mauris. Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed,</p>
+                <li><span className={classes.Heading}>Bachelor of Engineering</span><span className={classes.Duration}>Sep-2012 to June-2016</span>
+                    <p className={classes.Contents}>Computer Science and Engineering</p>
+                    <p className={classes.Contents}>SDM College of Engineering and Technology, Dharwad</p>
                 </li>
-                <li>
-                    <h3>XII from Kendriya Vidayalaya Moradabad - </h3>
-                    <p className={classes.Contents}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa dui, convallis sit amet lacus eu, iaculis volutpat mauris. Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed,</p>
+                <li><span className={classes.Heading}>Class XII</span><span className={classes.Duration}>May-2011 to May-2012</span>
+                    <p className={classes.Contents}>CBSE Board</p>
+                    <p className={classes.Contents}>Kendriya Vidayalaya Moradabad, Moradabad</p>
                 </li>
-                <li>
-                    <h3>XII from Kendriya Vidayalaya Moradabad - </h3>
-                    <p className={classes.Contents}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque massa dui, convallis sit amet lacus eu, iaculis volutpat mauris. Cras sit amet turpis eu dui mollis luctus vitae laoreet nunc. Nulla mi massa, vulputate a blandit a, mollis vel leo. Nam ex, auctor non faucibus sed,</p>
+                <li><span className={classes.Heading}>Class X</span><span className={classes.Duration}>May-2009 to May-2010</span>
+                    <p className={classes.Contents}>CBSE Board</p>
+                    <p className={classes.Contents}>Kendriya Vidayalaya Moradabad, Moradabad</p>
                 </li>
             </ul>
         </div>

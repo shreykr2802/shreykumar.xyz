@@ -196,8 +196,8 @@ class ContactMe extends Component {
                         shouldValidate={formElementsArray[4].config.validation}
                         touched={formElementsArray[4].config.touched} />
                 </div>
-                {this.state.status === 'SUCCESS' ? <p>Thanks</p> : <button disabled={!this.state.isFormValid}>Contact</button>}
-                {this.state.status === "ERROR" && <p>Ooops! There was an error.</p>}
+                {this.state.status === 'SUCCESS' ? <p className={classes.ContactSuccess}>Thanks</p> : <button className={classes.contactMeButton} disabled={!this.state.isFormValid}>Contact</button>}
+                {this.state.status === "ERROR" && <p className={classes.ContactError}>Ooops! There was an error.</p>}
             </form>
         );
 

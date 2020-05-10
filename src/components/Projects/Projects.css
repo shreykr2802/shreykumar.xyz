@@ -30,17 +30,8 @@
   opacity: 1;
 }
 
-.Box2 {
-  background-color: #569194;
-  height: 200px;
-  width: 30%;
-  margin-bottom: 3%;
-  opacity: 1;
-  text-decoration: none;
-}
-
-.Container span {
-  color: white;
+.Box1 p {
+  padding: 2%;
 }
 
 .Box1::before {
@@ -59,20 +50,18 @@
   z-index: 2;
 }
 
-.Box1 .Box1Span > * {
+.Box1 .Box1Span {
+  position: absolute;
   opacity: 0;
-  position: relative;
+  color: white;
+  transform: translateX(-92%);
 }
 
-.Box1:hover .Box1Span > * {
+.Box1:hover .Box1Span {
   transition: 0.7s ease-in-out;
   transition-delay: 0.7s;
   opacity: 1;
   z-index: 6;
-}
-
-.Box1 p {
-  padding: 2%;
 }
 
 .Box1Span h3 {
@@ -80,26 +69,35 @@
   margin: 0;
 }
 
-.Box1 img {
-  position: relative;
-  display: block;
-  top: 40%;
-  left: 10%;
+.Box1 .Box1InitialDesc {
+  padding-top: 10px;
+  display: inline-grid;
 }
 
-.viewProject {
+.Box1 .Box1InitialDesc .Technologies {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.Box1Span .viewProject,
+.Box1InitialDesc .viewProject {
   box-sizing: border-box;
   border: 4px white solid;
   padding: 1%;
-  align-self: baseline;
+  min-width: 70px;
 }
 
-.initialDescription {
-  color: black !important;
-  float: left;
-  margin-top: 50px;
-  margin-left: 30px;
-  font-weight: bold;
+.Box2 {
+  background-color: #569194;
+  height: 200px;
+  width: 30%;
+  margin-bottom: 3%;
+  opacity: 1;
+  text-decoration: none;
 }
 
 .Box2::before {
@@ -121,6 +119,7 @@
 .Box2 .Box2Span > * {
   opacity: 0;
   position: relative;
+  color: white;
 }
 
 .Box2:hover .Box2Span > * {
@@ -139,9 +138,40 @@
   margin: 0;
 }
 
-.Box2 img {
-  position: relative;
-  display: block;
-  top: 40%;
-  left: 10%;
+.Box2 .Box2InitialDesc {
+  padding-top: 10px;
+  display: inline-grid;
+}
+
+.Box2 .Box2InitialDesc .Technologies {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.Box2Span .viewProject,
+.Box2InitialDesc .viewProject {
+  box-sizing: border-box;
+  border: 4px white solid;
+  padding: 1%;
+  min-width: 70px;
+}
+
+@media (max-width: 700px) {
+  img {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .Box1 .Box1Span {
+    transform: translateX(-110%);
+  }
+
+  .Box1 .Box1InitialDesc .Technologies {
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
 }

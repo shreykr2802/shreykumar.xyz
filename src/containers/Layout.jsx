@@ -13,6 +13,8 @@ import Footer from '../components/Footer/Footer';
 
 import classes from './Layout.css';
 
+import { FaAngleDoubleUp } from "react-icons/fa";
+
 class Layout extends Component {
 
     state = {
@@ -29,25 +31,41 @@ class Layout extends Component {
         });
     };
 
+    handleClickOfNav = (event) => {
+        event.preventDefault();
+        const element = document.getElementById(event.target.name);
+        let y = element.getBoundingClientRect().top + window.scrollY;
+        y = y - 56;
+        window.scroll({
+            top: y,
+            behavior: 'smooth'
+        });
+    }
+
     render() {
         return (
             <div>
-                <Toolbar toggle={this.sideDrawerToggleHandler} />
+                <Toolbar toggle={this.sideDrawerToggleHandler} clicked={this.handleClickOfNav} />
                 <TopDrawer
                     closed={this.sideDrawerClosedHandler}
                     open={this.state.showSideDrawer}
+                    clicked={this.handleClickOfNav} 
                 />
                 <main className={classes.Content}>
-                <Home />
-                <AboutMe />
-                <Experience />
-                <Education />
-                <Testimonials />
-                <Projects />
-                <ContactMe />
-                <Footer />
+                    <Home />
+                    <AboutMe />
+                    <Experience />
+                    <Education />
+                    <Testimonials />
+                    <Projects />
+                    <ContactMe />
+                    <Footer />
+                    <a href="" name="home" className={classes.Up} onClick={(event) => this.handleClickOfNav(event)}><FaAngleDoubleUp onClick={(event) => {
+                        event.target.name = 'home';
+                        this.handleClickOfNav(event)
+                    }} size="2rem"/></a>
                 </main>
-                
+
             </div>
         )
     }

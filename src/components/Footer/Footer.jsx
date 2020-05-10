@@ -4,9 +4,9 @@ import classes from './Footer.css';
 
 const footer = props => (
     <section id="footer" className={classes.Footer}>
-        <div>
-            
-        </div>
+
+        <p className={classes.Copyright}>2020 © Copyright Shrey Kumar</p>
+
     </section>
 );
 

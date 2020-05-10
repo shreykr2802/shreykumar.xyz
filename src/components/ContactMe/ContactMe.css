@@ -24,3 +24,31 @@
     flex-flow: row;
     flex: 0% 0% 100%;
 }
+
+.contactMeButton{
+    width: 20%;
+    background-color: #569194;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    outline: none;
+    border: none;
+}
+
+.contactMeButton:hover {
+    transform: scale(1.1,1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.ContactSuccess {
+    color: green;
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+
+.ContactError {
+    color: red;
+    font-size: 1.17rem;
+    font-weight: bold;
+}
