@@ -84,16 +84,16 @@ const testimonials = props => {
         setScale(scaleArr);
     }
 
-    // useEffect(() => {
-    //     let timer = setTimeout(() => {
-    //         const newIndex = index === testimony.length - 1 ? 0 : index + 1;
-    //         changeClassAndDiv(newIndex);
-    //     }, 5000);
+    useEffect(() => {
+        let timer = setTimeout(() => {
+            const newIndex = index === testimony.length - 1 ? 0 : index + 1;
+            changeClassAndDiv(newIndex);
+        }, 5000);
 
-    //     return () => {
-    //         clearTimeout(timer);
-    //     }
-    // }, [x, index]);
+        return () => {
+            clearTimeout(timer);
+        }
+    }, [x, index]);
 
     useEffect(() => {
         const ele = document.querySelector('#testimonialContainer');
@@ -101,11 +101,11 @@ const testimonials = props => {
         if (window.innerWidth < 700) {
             ele.style.flexFlow = 'column';
             setX([0, 0, 0]);
-            // setY([0, -60, -120]);
             setY([60, 0, -60]);
         } else {
             ele.style.flexFlow = 'row';
             setX([50, 0, -50]);
+            setY([0, 0, 0]);
         }
     }, [window.innerWidth]);
 
