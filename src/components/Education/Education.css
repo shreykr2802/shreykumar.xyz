@@ -15,8 +15,9 @@
 
 .EducationDetails {
   padding-left: 6%;
+  padding-right: 6%;
   float: left;
-  width: 65%;
+  width: 88%;
   text-align: justify;
 }
 
@@ -70,10 +71,3 @@
     height: 15px;
   }
 }
-
-/* @media (max-width: 500px) {
-  .Education {
-    height: 5;
-    padding-bottom: 5%;
-  }
-} */

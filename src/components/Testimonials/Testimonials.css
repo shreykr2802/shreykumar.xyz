@@ -1,7 +1,7 @@
 .Testimonials {
     background-color: #EEEEEE;
     width: 100%;
-    height: 500px;
+    height: 600px;
     text-align: center;
 }
 
@@ -18,12 +18,15 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .SlideTestimonial {
     height: 100%;
-    min-width: 100%;
     transition: 0.7s;
+    width: 100%;
+    margin: 16px 16px 16px 16px;
 }
 
 .navigation {
@@ -81,8 +84,16 @@
     cursor: pointer;
 }
 
-@media (max-width:500px) {
+@media(max-width: 700px){
+    .SlideTestimonial{
+        margin:0;
+    }
+
+    .container {
+        height: 600px;
+    }
+
     .Testimonials {
-        height: 400px;
+        height: 800px;
     }
 }

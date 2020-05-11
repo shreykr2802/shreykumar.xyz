@@ -1,7 +1,7 @@
 .Experience {
   background-color: #eeeeee;
   width: 100%;
-  height: 650px;
+  height: 550px;
 }
 
 .Experience h1 {
@@ -71,13 +71,13 @@
   }
 
   .Experience {
-    height: 700px;
+    height: 550px;
     padding-bottom: 5%;
   }
 }
 
 @media (max-width: 500px) {
     .Experience {
-        height: 110vh;
+        height: 560px;
     }
 }

@@ -2,10 +2,15 @@
     padding-top: 5%;
     height: 80%;
     float: left;
-    width: 30%;
 }
 
 .Photo img {
     width: 50%;
     border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .Photo img {
+        width: 30%;
+    }
 }

@@ -1,10 +1,9 @@
 .Photo {
-    height: 80%;
-    width: 30%;
-    margin-left: 35%;
+    transform: translateY(-50%);
 }
 
 .Photo img {
-    width: 50%;
+    width: 20%;
     border-radius: 50%;
+    border: 2px solid black;
 }

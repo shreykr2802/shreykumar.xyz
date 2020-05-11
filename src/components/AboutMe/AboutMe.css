@@ -13,9 +13,12 @@
   margin: 0px;
 }
 
+.AboutMeContainer {
+  display: flex;
+  flex-flow: row;
+}
+
 .Description {
-  margin-left: 30%;
-  width: 60%;
   padding-right: 10%;
   padding-top: 5%;
   text-align: justify;
@@ -29,18 +32,24 @@
 
   .Description {
     padding-right: 4%;
+    padding-left: 4%;
     padding-top: 3%;
+  }
+
+  .AboutMeContainer {
+    flex-flow: column;
+  }
+
+  .AboutMe {
+    height: 700px;
   }
 }
 
 @media (max-width: 500px) {
-  .AboutMe {
-    height: 100%;
-    padding-bottom: 5%;
-  }
 
   .Description {
     padding-right: 3%;
     padding-top: 3%;
   }
+
 }
