@@ -1,0 +1,53 @@
+.TestimonialContentContainer{
+    padding-left: 5%;
+    padding-right: 5%;
+    transform: translateY(-10%);
+}
+
+.TestimonialContents {
+    box-sizing: border-box;
+    border: 2px double black;
+    height: 300px;
+    background-color: white;
+    margin-top: 8%;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.TestimonialName{
+    color: #569194;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.TestimonialDesignation{
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.TestimonialCompany{
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.TestimonialText{
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;  
+    font-size: 0.7rem;  
+}
+
+.TestimonialText::before{
+    content: "\0022";
+    color:  #569194;
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+}
+
+@media(max-width: 700px) {
+    .TestimonialContents{
+        margin-top: 0;
+        box-shadow: none;
+        padding-top: 35px;
+    }
+}
